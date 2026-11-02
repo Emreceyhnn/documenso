@@ -2871,6 +2871,10 @@ msgstr "Storniert"
 msgid "Cancelled by user"
 msgstr "Vom Benutzer abgebrochen"
 
+#: packages/trpc/server/auth-router/schema.ts
+msgid "Cannot be more than 72 characters in length"
+msgstr ""
+
 #: apps/remix/app/components/embed/authoring/configure-document-upload.tsx
 msgid "Cannot remove document"
 msgstr "Dokument kann nicht entfernt werden"
@@ -7020,6 +7024,10 @@ msgstr "Ungültige Domains"
 msgid "Invalid email"
 msgstr "Ungültige E-Mail"
 
+#: packages/lib/utils/zod.ts
+msgid "Invalid email address"
+msgstr ""
+
 #: apps/remix/app/routes/embed+/v2+/authoring+/envelope.create._index.tsx
 #: apps/remix/app/routes/embed+/v2+/authoring+/envelope.edit.$id.tsx
 msgid "Invalid Embedding Parameters"
@@ -7879,6 +7887,14 @@ msgstr "In Ordner verschieben"
 msgid "Multiple access methods can be selected."
 msgstr "Es können mehrere Zugriffsmethoden ausgewählt werden."
 
+#: packages/trpc/server/auth-router/schema.ts
+msgid "Must be at least 6 characters in length"
+msgstr ""
+
+#: packages/trpc/server/auth-router/schema.ts
+msgid "Must be at least 8 characters in length"
+msgstr ""
+
 #: apps/remix/app/components/dialogs/folder-create-dialog.tsx
 msgid "My Folder"
 msgstr "Mein Ordner"
@@ -7932,6 +7948,18 @@ msgstr "N/A"
 #: packages/ui/primitives/template-flow/add-template-placeholder-recipients.tsx
 msgid "Name"
 msgstr "Name"
+
+#: packages/lib/types/name.ts
+msgid "Name cannot be more than 100 characters."
+msgstr ""
+
+#: packages/lib/types/name.ts
+msgid "Name cannot contain URLs."
+msgstr ""
+
+#: packages/lib/types/name.ts
+msgid "Name contains invalid characters."
+msgstr ""
 
 #: apps/remix/app/components/dialogs/sign-field-name-dialog.tsx
 msgid "Name is required"
@@ -8434,6 +8462,14 @@ msgstr "Nachdem du deine DNS-Einträge aktualisiert hast, kann es bis zu 48 Stun
 msgid "Once your template is set up, share the link anywhere you want. The person who opens the link will be able to enter their information in the direct link recipient field and complete any other fields assigned to them."
 msgstr "Sobald Ihre Vorlage eingerichtet ist, teilen Sie den Link überall, wo Sie möchten. Die Person, die den Link öffnet, kann ihre Informationen im Feld für direkte Empfänger eingeben und alle anderen ihr zugewiesenen Felder ausfüllen."
 
+#: packages/trpc/server/auth-router/schema.ts
+msgid "One lowercase character is required"
+msgstr ""
+
+#: packages/trpc/server/auth-router/schema.ts
+msgid "One number is required"
+msgstr ""
+
 #: apps/remix/app/components/embed/multisign/multi-sign-document-list.tsx
 msgid "One of the documents in the current bundle has a signing role that is not compatible with the current signing experience."
 msgstr "Eines der Dokumente im aktuellen Paket hat eine Signaturrolle, die mit der aktuellen Signiererfahrung nicht kompatibel ist."
@@ -8444,6 +8480,14 @@ msgstr ""
 
 #: apps/remix/app/utils/toast-error-messages.ts
 msgid "One or more of your required fields have not been saved. Please refresh the page, complete any empty required fields, and try again."
+msgstr ""
+
+#: packages/trpc/server/auth-router/schema.ts
+msgid "One special character is required"
+msgstr ""
+
+#: packages/trpc/server/auth-router/schema.ts
+msgid "One uppercase character is required"
 msgstr ""
 
 #: apps/remix/app/components/forms/branding-preferences-form.tsx
@@ -8899,6 +8943,10 @@ msgstr "Passwort aktualisiert"
 msgid "Password updated!"
 msgstr "Passwort aktualisiert!"
 
+#: apps/remix/app/components/forms/password.tsx
+msgid "Passwords do not match"
+msgstr ""
+
 #: apps/remix/app/components/general/admin-license-card.tsx
 #: apps/remix/app/components/tables/user-billing-organisations-table.tsx
 #: packages/lib/constants/billing.ts
@@ -9130,6 +9178,14 @@ msgstr "Bitte schließen Sie diesen Tab nicht. Der Signaturanbieter finalisiert 
 #: apps/remix/app/components/dialogs/sign-field-number-dialog.tsx
 msgid "Please enter a number"
 msgstr "Bitte gib eine Zahl ein"
+
+#: packages/trpc/server/team-router/schema.ts
+msgid "Please enter a valid email."
+msgstr ""
+
+#: packages/lib/types/name.ts
+msgid "Please enter a valid name."
+msgstr ""
 
 #: apps/remix/app/components/dialogs/sign-field-number-dialog.tsx
 msgid "Please enter a valid number"
@@ -11924,6 +11980,26 @@ msgstr "Team-URL"
 msgid "Team URL"
 msgstr "Team-URL"
 
+#: packages/trpc/server/team-router/schema.ts
+msgid "Team URL can only contain letters, numbers, dashes and underscores."
+msgstr ""
+
+#: packages/trpc/server/team-router/schema.ts
+msgid "Team URL cannot contain consecutive dashes or underscores."
+msgstr ""
+
+#: packages/trpc/server/team-router/schema.ts
+msgid "Team URL cannot start or end with dashes or underscores."
+msgstr ""
+
+#: packages/trpc/server/team-router/schema.ts
+msgid "Team URL must be at least 3 characters long."
+msgstr ""
+
+#: packages/trpc/server/team-router/schema.ts
+msgid "Team URL must not exceed 30 characters."
+msgstr ""
+
 #: apps/remix/app/components/general/org-menu-switcher.tsx
 #: apps/remix/app/components/general/organisation-usage-panel.tsx
 #: apps/remix/app/components/general/settings-upsell/branding-upsell.tsx
@@ -13021,6 +13097,7 @@ msgstr "Dieser Token ist ungültig oder abgelaufen. Bitte kontaktieren Sie Ihr T
 #: apps/remix/app/components/dialogs/team-create-dialog.tsx
 #: apps/remix/app/components/forms/organisation-update-form.tsx
 #: apps/remix/app/components/forms/team-update-form.tsx
+#: packages/trpc/server/team-router/schema.ts
 msgid "This URL is already in use."
 msgstr "Diese URL wird bereits verwendet."
 

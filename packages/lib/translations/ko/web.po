@@ -2871,6 +2871,10 @@ msgstr "취소됨"
 msgid "Cancelled by user"
 msgstr "사용자가 취소함"
 
+#: packages/trpc/server/auth-router/schema.ts
+msgid "Cannot be more than 72 characters in length"
+msgstr ""
+
 #: apps/remix/app/components/embed/authoring/configure-document-upload.tsx
 msgid "Cannot remove document"
 msgstr "문서를 제거할 수 없습니다."
@@ -7020,6 +7024,10 @@ msgstr "잘못된 도메인"
 msgid "Invalid email"
 msgstr "유효한 이메일이 아닙니다."
 
+#: packages/lib/utils/zod.ts
+msgid "Invalid email address"
+msgstr ""
+
 #: apps/remix/app/routes/embed+/v2+/authoring+/envelope.create._index.tsx
 #: apps/remix/app/routes/embed+/v2+/authoring+/envelope.edit.$id.tsx
 msgid "Invalid Embedding Parameters"
@@ -7879,6 +7887,14 @@ msgstr "폴더로 이동"
 msgid "Multiple access methods can be selected."
 msgstr "여러 접근 방식을 선택할 수 있습니다."
 
+#: packages/trpc/server/auth-router/schema.ts
+msgid "Must be at least 6 characters in length"
+msgstr ""
+
+#: packages/trpc/server/auth-router/schema.ts
+msgid "Must be at least 8 characters in length"
+msgstr ""
+
 #: apps/remix/app/components/dialogs/folder-create-dialog.tsx
 msgid "My Folder"
 msgstr "내 폴더"
@@ -7932,6 +7948,18 @@ msgstr "해당 없음"
 #: packages/ui/primitives/template-flow/add-template-placeholder-recipients.tsx
 msgid "Name"
 msgstr "이름"
+
+#: packages/lib/types/name.ts
+msgid "Name cannot be more than 100 characters."
+msgstr ""
+
+#: packages/lib/types/name.ts
+msgid "Name cannot contain URLs."
+msgstr ""
+
+#: packages/lib/types/name.ts
+msgid "Name contains invalid characters."
+msgstr ""
 
 #: apps/remix/app/components/dialogs/sign-field-name-dialog.tsx
 msgid "Name is required"
@@ -8434,6 +8462,14 @@ msgstr "DNS 레코드를 업데이트한 후 전파가 완료되기까지 최대
 msgid "Once your template is set up, share the link anywhere you want. The person who opens the link will be able to enter their information in the direct link recipient field and complete any other fields assigned to them."
 msgstr "템플릿 설정을 마친 후 링크를 원하는 곳에 공유하세요. 링크를 연 사람은 다이렉트 링크 수신자 필드에 자신의 정보를 입력하고, 본인에게 할당된 다른 필드도 모두 작성할 수 있습니다."
 
+#: packages/trpc/server/auth-router/schema.ts
+msgid "One lowercase character is required"
+msgstr ""
+
+#: packages/trpc/server/auth-router/schema.ts
+msgid "One number is required"
+msgstr ""
+
 #: apps/remix/app/components/embed/multisign/multi-sign-document-list.tsx
 msgid "One of the documents in the current bundle has a signing role that is not compatible with the current signing experience."
 msgstr "현재 번들에 포함된 문서 중 하나에 현재 서명 환경과 호환되지 않는 서명 역할이 있습니다."
@@ -8444,6 +8480,14 @@ msgstr ""
 
 #: apps/remix/app/utils/toast-error-messages.ts
 msgid "One or more of your required fields have not been saved. Please refresh the page, complete any empty required fields, and try again."
+msgstr ""
+
+#: packages/trpc/server/auth-router/schema.ts
+msgid "One special character is required"
+msgstr ""
+
+#: packages/trpc/server/auth-router/schema.ts
+msgid "One uppercase character is required"
 msgstr ""
 
 #: apps/remix/app/components/forms/branding-preferences-form.tsx
@@ -8899,6 +8943,10 @@ msgstr "비밀번호가 업데이트되었습니다"
 msgid "Password updated!"
 msgstr "비밀번호가 업데이트되었습니다!"
 
+#: apps/remix/app/components/forms/password.tsx
+msgid "Passwords do not match"
+msgstr ""
+
 #: apps/remix/app/components/general/admin-license-card.tsx
 #: apps/remix/app/components/tables/user-billing-organisations-table.tsx
 #: packages/lib/constants/billing.ts
@@ -9130,6 +9178,14 @@ msgstr "이 탭을 닫지 마십시오. 서명 제공자가 서명을 마무리�
 #: apps/remix/app/components/dialogs/sign-field-number-dialog.tsx
 msgid "Please enter a number"
 msgstr "숫자를 입력하세요"
+
+#: packages/trpc/server/team-router/schema.ts
+msgid "Please enter a valid email."
+msgstr ""
+
+#: packages/lib/types/name.ts
+msgid "Please enter a valid name."
+msgstr ""
 
 #: apps/remix/app/components/dialogs/sign-field-number-dialog.tsx
 msgid "Please enter a valid number"
@@ -11924,6 +11980,26 @@ msgstr "팀 URL"
 msgid "Team URL"
 msgstr "팀 URL"
 
+#: packages/trpc/server/team-router/schema.ts
+msgid "Team URL can only contain letters, numbers, dashes and underscores."
+msgstr ""
+
+#: packages/trpc/server/team-router/schema.ts
+msgid "Team URL cannot contain consecutive dashes or underscores."
+msgstr ""
+
+#: packages/trpc/server/team-router/schema.ts
+msgid "Team URL cannot start or end with dashes or underscores."
+msgstr ""
+
+#: packages/trpc/server/team-router/schema.ts
+msgid "Team URL must be at least 3 characters long."
+msgstr ""
+
+#: packages/trpc/server/team-router/schema.ts
+msgid "Team URL must not exceed 30 characters."
+msgstr ""
+
 #: apps/remix/app/components/general/org-menu-switcher.tsx
 #: apps/remix/app/components/general/organisation-usage-panel.tsx
 #: apps/remix/app/components/general/settings-upsell/branding-upsell.tsx
@@ -13021,6 +13097,7 @@ msgstr "이 토큰은 유효하지 않거나 만료되었습니다. 새 초대�
 #: apps/remix/app/components/dialogs/team-create-dialog.tsx
 #: apps/remix/app/components/forms/organisation-update-form.tsx
 #: apps/remix/app/components/forms/team-update-form.tsx
+#: packages/trpc/server/team-router/schema.ts
 msgid "This URL is already in use."
 msgstr "이 URL은 이미 사용 중입니다."
 

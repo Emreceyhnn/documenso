@@ -1,3 +1,4 @@
+import { msg } from '@lingui/core/macro';
 import { z } from 'zod';
 
 export const URL_PATTERN = /https?:\/\/|www\./i;
@@ -56,13 +57,13 @@ export const hasInvalidTextCharacters = (value: string) =>
 export const ZNameSchema = z
   .string()
   .trim()
-  .min(2, { message: 'Please enter a valid name.' })
-  .max(100, { message: 'Name cannot be more than 100 characters.' })
+  .min(2, { message: msg`Please enter a valid name.`.id })
+  .max(100, { message: msg`Name cannot be more than 100 characters.`.id })
   .refine((value) => !URL_PATTERN.test(value), {
-    message: 'Name cannot contain URLs.',
+    message: msg`Name cannot contain URLs.`.id,
   })
   .refine((value) => !hasInvalidTextCharacters(value), {
-    message: 'Name contains invalid characters.',
+    message: msg`Name contains invalid characters.`.id,
   });
 
 export type TName = z.infer<typeof ZNameSchema>;
